@@ -1,0 +1,356 @@
+html, 
+body{
+    height: 100%;
+    width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: .5em;
+    font-family: "Lato", sans-serif;
+}
+
+p{
+    line-height: 1em;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    overflow:visible;
+    background-color: #777;
+    color: #fff;
+}
+
+#logo{
+    height: 200px;
+    width: 350px;
+    margin: 10% auto;
+}
+
+header{
+    background: #4f504f;
+    box-shadow: 0 .5em 1em #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    text-align: center;
+}
+
+header label{
+    color: #f8f0c2;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 4.25em;
+    font-size: .67em;
+    font-weight: bold;
+    padding: 0 5em;
+}
+
+header label:hover{
+    background: #2e353b;
+    color: azure;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 7em 1em 0;
+    background-color: #fff;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: left 0s .7s;
+}
+
+.headline{
+    text-align: center;
+}
+
+.slide-main{
+    padding: 10em 1em 0;
+    /*background-color:cadetblue;*/
+    /*background-image:url(images/main-bg.jpg);*/
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+    text-align: center;
+    background: linear-gradient(160deg, #778581, #2d2f2e);
+}
+
+.slide-resume{
+    padding: 5em 1em 0;
+    padding-bottom: 5em;
+    background-color:#93d824;
+    background-repeat:no-repeat;
+/*
+    background-image: url(images/destiny-bg.png);
+*/
+    background-size: contain;
+    background-position: top;
+    background-size: auto;
+    background: linear-gradient(160deg, #9bcbd9, #163635);
+    overflow: scroll;
+    
+    
+    font-family: "Lato", "Droid Sans", sans-serif;
+}
+
+.slide-resume p{
+    margin: 20px 0px 0px;
+    padding: 15% auto;
+}
+
+.slide-resume li{
+    list-style: none;
+}
+
+.slide-resume div{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.slide table{
+    width: 95%;
+    margin: 0px auto;
+}
+
+.slide-design{
+    padding: 10em 1em 0;
+    background-color:#8030ff;
+/*    background-image: url(images/elite-bg.jpg);*/
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+}
+
+.slide-vr{
+    padding: 10em 1em 0;
+    background-color:#f8586a;
+/*    background-image: url(images/VR-bg.jpg);*/
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+}
+
+.slide-contact{
+    padding: 10em 1em 0;
+    background-color:#6ade06;
+/*    background-image: url(images/email-bg.jpg);*/
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+    overflow: hidden;
+}
+
+#form-container{
+    background-color: rgba(68, 68, 68, 0.8);
+    height: 60%;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    
+}
+
+#contact-form{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+#contact-form input[type="text"]{
+    height: 35px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#contact-form textarea {
+    height: 220px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#contact-submit-button{
+    font-family: "Droid Sans", sans-serif;
+    border: #fbfbfb solid 2px;
+    cursor: pointer;
+    background-color: azure;
+    color: #333;
+    font-size: 20px;
+    padding: 10px 0;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slide h1, h2, h3, h4, p, ul, table {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform .5s .5s, opacity .5s;
+}
+
+.headline h1, .headline h4{
+    text-align: center;
+}
+
+::placeholder{
+    color:aqua;
+    font-size: 1.2em;
+}
+
+/*
+.slide h4 {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform .5s .5s, opacity .5s;
+}
+*/
+
+/* This selects anything that has "slide" as the prefix (all slides), and is checked
+and changes the style of that slide by moving it into place */
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+}
+
+[id^="slide"]:checked + .slide h1{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+}
+
+[id^="slide"]:checked + .slide h2{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+    transition-delay: .75s;
+}
+
+[id^="slide"]:checked + .slide h3{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+    transition-delay: .9s;
+}
+
+[id^="slide"]:checked + .slide h4{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+    transition-delay: 1s;
+}
+
+[id^="slide"]:checked + .slide table{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+    transition-delay: 1.1s;
+}
+
+[id^="slide"]:checked + .slide ul{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+    transition-delay: 1.1s;
+}
+
+[id^="slide"]:checked + .slide p{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+    transition-delay: 1.1s;
+}
+/*
+
+#wrapper
+{
+	background-color: #0868E5;
+	height: 100%;
+	width: 100%;
+    transform: translate3d(0, 0, 0);
+    border: 5px #ddd solid 0.5;
+    overflow: hidden;
+}
+
+#main{
+    height: 100%;
+	width: 300%;
+    padding: 40% 20%;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 3px dotted #f3f3f3;
+    border-top: 4px solid #f25a41;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.inner-content{
+    float: left;
+    height: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#resume-page{
+    background-color: darkgreen;
+    height: 100%;
+	width: 100%;
+    position: absolute;
+}
+    #resume-page:hover{
+        background-color: blueviolet;
+        transition: background-color .5s ease-in;
+    }
+
+#gallery-page{
+    background-color: #2081f2;
+    height: 100%;
+	width: 100%;
+    position: absolute;
+}
+
+#vr-page{
+    background-color: #9b2bd6;
+    height: 100%;
+	width: 100%;
+    position: absolute;
+}
+
+#contact-page{
+    background-color: #f79107;
+    height: 100%;
+	width: 100%;
+    position: absolute;
+}
+
+
+*/
