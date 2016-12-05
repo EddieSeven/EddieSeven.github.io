@@ -2,7 +2,7 @@
 <html>
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Codery & Pixelcraft</title>
+		<title>Codery &amp;&amp; Pixelcraft - Graphics and Development - Fort Collins, CO</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles-prototype.css" />
          <link rel="stylesheet" type="text/css"
@@ -18,35 +18,59 @@
 	<body>
 		
             <header>
+                <label for="slide-main-trigger"><img src="images/cnp-logo-small.png" /></label>
                 <label for="slide-main-trigger">Home</label>
                 <label for="slide-resume-trigger">Resume</label>
                 <label for="slide-design-trigger">Design</label>
-                <label for="slide-vr-trigger">Virtual Reality</label>
+                <label for="slide-articles-trigger">Articles</label>
+                <label for="slide-reviews-trigger">VR Reviews</label>
+                <label for="slide-devlog-trigger">VR Devlog</label>
+                <label for="slide-theory-trigger">Game Theory</label>
                 <label for="slide-contact-trigger">Contact Me</label>
             </header>
             
-         <div class="wrapper">   
+         <div class="wrapper">
+            <!-- Home'page' --> 
 		  <input id="slide-main-trigger" type="radio" name="slides" checked>
             <section class="slide slide-main">
                 <div id="logo">
                 <object align="center">
                     <embed src="images/CnP-Proto-3.svg" alt="Codery & Pixelcraft Logo">
                 </object>
-                
-                    <h1>Codery & Pixelcraft</h1>
-
-                    <h4>By: Charles Culpepper</h4>
                 </div>
+                <div id="welcome">
+                    <h1>Codery &amp;&amp; Pixelcraft</h1>
+
+                    <h5>By: Charles Culpepper</h5>
+                    <br>
+                    
+                    <h3>Welcome</h3>
+                    
+                    <br>
+                    
+                    <p>This is a website dedicated to exhibiting both my work and my interests!</p>
+                    <p>There's a variety of content on the site that is meant to exhibit creativity and ability in writing, web/game dev, layout, typography, graphic and UX design. </p>
+                    
+                    <p>One of the latest innovations in my field is virtual reality. It's currently very much a "wild west" in terms of development. Everyone is still figuring things out. To this end, I'm going to be reviewing some virtual reality experiences, both as a fun project for myself, and as a way to think criticially about the trends in VR, what seems to be working or not, and why. </p>
+                    
+                    <p>I'll be recording my own forays into the medium, in writing, podcasts, images and soon (hopefully), video. I invite you to join me in learning about this intriguing new frontier in the devlog page.</p>
+                        
+                        
+                    <p>Take a look around, hope you like what you see!</p>
+                </div>
+                
             </section>
+            <!-- End Home'page' --> 
             
-            
-            
+             
+            <!-- Resume 'page' --> 
             <input id="slide-resume-trigger" type="radio" name="slides">
             <section class="slide slide-resume">
                 
                 <div class="headline">
                     <h1>Varied and Cohesive Skillset</h1>
                     <h4>An Eye for Design. A Mind for Code.</h4>
+                    
                 </div>
                 
                 <br>
@@ -92,6 +116,7 @@
                     
                     </table>
                     <h3>Objective</h3>
+                    <img src="images/bio-pic-small.jpg" align="right"/>
                     <p>
                         To pursue a career as a multimedia designer and developer, showcasing my creativity and contributing to the growth and success of both myself and my employer.
                     </p>
@@ -119,7 +144,7 @@
                     <ul>
                         <li><h5>Duties:</h5></li>
                         <li>Manage and Supervise Employees</li>
-                        <li>Billing & Payroll</li>
+                        <li>Billing &amp; Payroll</li>
                         <li>Various administrative  tasks</li>
                         <li>Delegation of Tasks</li>
                         <li>Day to Day Accounting</li>
@@ -162,33 +187,277 @@
                     
                 </div>
             </section>
+            <!-- End Resume 'page' --> 
              
              
-            
+            <!-- Design 'page' -->  
             <input id="slide-design-trigger" type="radio" name="slides">
             <section class="slide slide-design">
-                <h1>Web and Graphics Design</h1>
-                <h4>From UX Development to Typography</h4>
+                <div>
+                    <h1>Web and Graphics Design</h1>
+                    <h4>From Game Development to Typography</h4>
+                </div>
+                <div class="gallery">
+                    <h3>Logo &amp; Branding Gallery</h3>
+                        <div class="thumbs">
+                    <img src="images/new-nyjets-logo-green.png" onmouseover="preview.src=img1.src" alt="New York Jets Mock Logo in Green" class="gallery" name="img1">
+                    <img src="images/new-nyjets-logo-white.png" onmouseover="preview.src=img2.src" alt="New York Jets Mock Logo in White" class="gallery" name="img2">
+                    <img src="images/new-broncos-logo-wip.png" onmouseover="preview.src=img3.src" alt="Denver Broncos Mock Logo Work In Progress" class="gallery" name="img3">
+                    <img src="images/maelstrom-logos.png" onmouseover="preview.src=img4.src" alt="Logo Mockups for a Waterport Company" class="gallery" name="img4">
+                    <img src="images/neo-pixel-logo.png" onmouseover="preview.src=img5.src" alt="New York Jets Mock Logo in White" class="gallery" name="img5">
+                    <img src="images/club-kaos-logo.png" onmouseover="preview.src=img6.src" alt="Denver Broncos Mock Logo Work In Progress" class="gallery" name="img6">
+                    <img src="images/trans-japan-logo.png" onmouseover="preview.src=img7.src" alt="Denver Broncos Mock Logo Work In Progress" class="gallery" name="img7">
+                        </div>
+                    <div class="preview" align="left">
+		<img name="preview" src="images/new-nyjets-logo-green.png" alt="New York Jets Mock Logo in Green"/>
+	</div>
+                </div>
             </section>
+            <!-- End Design 'page' --> 
              
              
-            
-            <input id="slide-vr-trigger" type="radio" name="slides">
-            <section class="slide slide-vr">
-                <h1>Virtual Reality Development</h1>
-                <h4>Another Dimension of Design</h4>
+            <!-- Articles 'page' -->  
+            <input id="slide-articles-trigger" type="radio" name="slides">
+            <section class="slide slide-articles">
+                <h1>Latest Articles</h1>
+                <h4>Writing on Tech and Dev</h4>
             </section>
+            <!-- End Articles 'page' --> 
              
              
+            <!-- Reviews 'page' --> 
+            <input id="slide-reviews-trigger" type="radio" name="slides">
+            <section class="slide slide-reviews">
+                <div>
+                    <a name="top"></a>
+                    <br>
+                <h1>VR Reviews</h1>
+                <h4>Exploring a New Medium</h4>
+                <p>VR is finally in family homes worldwide. While expensive, VR is now within reach of the average consumer. With the hardware readily available, it falls on the developers to nourish and grow the new market, and that is only accomplished by the software; the experiences we provide.
+                    </p>
+                <p>This page is dedicated to that effort. Hundreds of devs are crafting experiences that were unachievable before 2016. I'll be checking out what my peers have been working on and letting my readers know what experiences are worthwhile. Hopefully I learn a thing or two long the way!</p><br>
+                
+                <h4>Latest Reviews:</h4>
+                    <ul>
+                        <a href="#elite-review"><li>Elite: Dangerous - Space Flight/Combat/Exploration</li></a>
+                        <a href="#google-earth-review"><li>Google Earth VR - Earth Exploration/Photogrammetry</li></a>
+                        <a href="#climbey-review"><li>Climbey - Climbing Based Platformer</li></a>
+                        <a href="#left-hand-review"><li>Left-Hand Path - Linear Dungeon Crawler</li></a>
+                        <a href="#eleven-review"><li>Eleven Table Tennis - Ping Pong</li></a>
+                    </ul>
+                <br>
+                <h4>Upcoming Reviews</h4>
+                    
+                    <ul>
+                        <li>Trickster VR - Procedurally Generated Dungeon Crawler</li>
+                        <li>Hotdogs, Horseshoes and Hand Grenades VR - Firing Range Simulator</li>
+                        <li>Arizona Sunshine - Open World Survival Based Zombie Shooter</li>
+                        <li>Thrill of the Fight - Boxing Simulator</li>
+                    </ul>
+                    <a name="elite-review"></a>
+                </div>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <hr>
+                <br>
+                
+                <div class="review">
+                    
+                    <h3>Elite: Dangerous</h3>
+                <p>
+                I have my own spaceship. That’s what it means to play this game in VR.</p>
+
+
+<p>Now, I don’t mean there’s a graphic on my screen that looks like a ship. I mean I’m literally, physically walking around <em>the bridge of my ship</em>. It always seemed spacious on a screen, but VR really brings it to another level</p>
+
+
+<p>Elite: Dangerous is an interesting case to study because it started out, and remains, a non-VR game. You don’t need any sort of headset or super-computer to be able to join in. This allows for much clearer parallels between the two presentations, and can help highlight the strengths and weaknesses of both mediums.</p>
+
+
+<p>Elite: Dangerous is an attempt at a semi-realistic space simulation. It takes place over a millennium into the future, where interstellar travel is commonplace.  Aside from that, Elite provides a 1 to 1 recreation of the Milky Way Galaxy. You read that right. One to one. Billions of stars, each potentially inhabited by a solar system. It takes real world months of travel, to get from one end to the other, jumping from start to star at several hundred times the speed of light. At the moment, you can’t land on planet with an established atmosphere (that’s in the works), but you can land on anything else, from rocky and icy planets, to asteroids, derelict ships, space stations and moons, there is a literal entire galaxy to explore.</p>
+
+
+<p>That description alone is pretty exciting for me. I like this kind of stuff, and I’m a gamer. But playing this game in VR is beyond that. I don’t have words to express how it feels warp in front of a star, or survive an impromptu starship fight. The only way to explain it is that you honestly feel like you’re there. Your hands move with the throttle and stick in-game, just as they would. You feel your stomach lurch if you’re maneuvers are a little too evasive. And you feel yourself sit back in your chair every time you warp, like an invisible force is pushing you back.</p>
+
+
+<p>But not everything is perfect of course. You can’t see your keyboard, so if you want to put in a specific destination, you’d better learn to touch type. It can also be jarring. I’ve spent quite a few hours in VR and have my legs under me, but it can make people motion sick. And finally, Elite looks beautiful on a standard 4K monitor, so you’d be giving that up. VR graphics couldn’t possibly hope to keep up, so the end result is admittedly blurrier, especially text.</p>
+                
+<p>At the end of the day you're giving up the pretty HD sheen of a 2016 video game and exchanging it for immersion, presence inside what is basically another world. I may be biased, but I find that trade off worth it. If you have any way to experience this with a VR headset, I couldn't recommend the experience enough, but even if you don't, the game might be worth a shot if only to see what you're missing out on.</p><br>
+                    <a name="google-earth-review"></a>
+                    <a href="#top">Back to Top</a>
+                    <hr>
+                    </div>
+                
+                <div class="reviews">
+                    <h3>Google Earth VR</h3>
+                    <p>
+                    There’s not too much to say about this one as it’s fairly self explanatory, but the feeling is so amazing, I thought it was worth a mention. This is a version of the Google Earth we all know and love, in VR.</p>
+
+<p>
+What does that mean? Pick a place, ANY place, and you can go there. You can spin the earth like a globe and plop yourself down wherever you desire. Once you’re on the ground, you can choose to fly around too. You kind of feel like Superman.</p>
+
+<p>
+It’s not perfect. It takes times for the maps to render, so for a bit, you’re surrounded by what looks like a world made of clay. And most of it is constructed from satellite imagery, so some cities and towns may be generally pretty flat. Still, it’s an odd sensation to be able to zoom into your own backyard and see what you’re used to seeing outside your real life door.</p>
+
+<p>
+This technology brings up a lot of interesting applications for the future of VR. You can visit work sites without actually going. You can plan out parks and civil plans for a town or city. What about new contruction? They might be able to plan a development or build a house based on what they can see in Google Earth. Real estate agents can give tours of houses and towns without going anywhere.</p>
+
+<p>
+Virtual reality is in its infancy, and there’s already wondrous applications of it that make you question how it can impact life and business in the future. This is only the beginning. 10 years ago, there was no such thing as an iPhone, and now it’s ubiquitous. Who knows where VR will be in ten years time.
+                    </p><br>
+                    <a name="climbey-review"></a>
+                    <a href="#top">Back to Top</a>
+                    <hr><br>
+                </div>
+                
+                
+                <div class="reviews">
+                <h3>Climbey</h3>
+                    <p>
+                    Climbey is a floating obstacle course game. VR is currently limited to hand tracking; it can’t see your body or your legs. So the concept of an “obstacle course” game seems rather unintuitive.</p>
+
+<p>
+It turns out, you don’t need a body to jump around! Climbey’s main mechanic, as it’s title suggests, is climbing. The worlds are made of different colored blocks with different properties. Some you can grab and climb, other you can only stand on. You can also “jump”, with a creative little game mechanic where you can “grab” the air around you, and use it as leverage to propel yourself in whatever direction you aim. It takes a little getting used to, but once it clicks it totally makes sense.</p>
+
+<p>
+The point of the game is simple, just get to the top. These are floating worlds, so if you look down at any given point, there is a real sense of height. In addition to the levels the game comes with, it includes a level editor, so everyone who owns the game can make their own custom courses for others to play all over the world. At that point, you have an inifinite amount of levels to try to climb.</p>
+
+                    <p>
+It’s addictive too. Once you get your bearings, you start leaping and climbing all over the place, like some sort of parkour simulator. It’s a great time, and one of the most memorable experiences I’ve had in VR.</p>
+
+<p>
+In all honesty, it seems rather simple when I explain it. But that’s the thing with VR, it can make even the most mundane of tasks seem like a magical experience. See you guys at the top!
+                    </p><br>
+                    <a name="left-hand-review"></a>
+                    <a href="#top">Back to Top</a>
+                    <hr><br>
+                </div>
+                
+                <div class="reviews">
+                <h3>Left-Hand Path</h3>
+                    <p>
+                    The dark. That’s where you start in this role playing adventure in the style of the popular Dark Souls series of games. You’re in a pitch black room, with a voice guiding you to light your staff with a spell. You wave your hand in a some sort of rune pattern, and suddenly your staff ignites in light, and you find yourself sitting in a cellar of an unknown (yet very creepy) dungeon. You waved your hand and made <em>magic</em>.</p>
+
+<p>
+That’s the basic experience the developers are going for here. They want you to feel like a powerful mage or sorcerer, and they try to give you that experience of being able to wave your hands and wield magic. The effect is convincing. In my mind, I was casting fireballs and protective shields and all sorts of fun stuff with my own hands and staff. The entire setting is dark, the only light you ever see is from soft torch light or the magic glow emitted by your trusty staff. All spells take the form of a gesture with your “free” hand, and is aimed by the staff in your other hand.</p>
+
+<p>
+The enemies hide, and try to ambush you from dark corners. This isn’t a standard game, you can’t just point and shoot. If a demon comes flying out at you from a dark corner, you have to have the mental fortitude to stand your ground, cast your spell, and aim it, all before the monster gets to you. You have the ability to teleport, so you may be able to buy yourself some time, but that too has to be aimed, so even evasion can cost you crucial seconds that will likely mean the end of you.</p>
+
+<p>
+There’s puzzles and mysteries riddled in the rooms of the dungeon as well. Advancing past some points requires the casting of a ritual, a more complex series of actions that may involve items or several other spells to complete. And at the beginning with only your light spell, so you start off defenseless and need to build your repertoire of abilities, with most of the dungeon locked off to you until you gain access to more rituals in order to advance</p>
+
+<p>
+Like most VR games, Left Hand Path is in Early Access, and development continues past the point I reached. There’s currently about 6 hours of unique gameplay in the game, with the goal being to triple it in size by the time they reach a full version. The game is already in great shape both graphically and mechanically, so if you were looking for a good fantasy RPG experience in VR, this is certainly a good option. Just keep in mind, while it’s not particularly described as a horror title, it’s a scary place to be in.
+                    </p><br>
+                    <a name="eleven-review"></a>
+                    <a href="#top">Back to Top</a>
+                    <hr><br>
+                </div>
+                
+                <div class="reviews">
+                <h3>Eleven: Table Tennis</h3>
+                    <p>
+                I don’t know about you guys, but my significant other just refuses to let me replace the dining table with a ping pong table. You can eat off ping pong tables!! But you can’t ping pong on dining tables. Alas, that particular battle may be unwinnable, but VR has given me a solution. A virtual ping pong table!</p>
+
+<p>
+Ping pong, or to be more formal, table tennis, has long been a side hobby of mine. I used to have a table growing up, but lately it’s been more of a bar sport. If I had the space, I would almost certainly have one by now, but this VR game is absolutely the next best thing.</p>
+
+<p>
+As someone who’s played table tennis pretty extensively, I know what it’s supposed to feel like to play. It’s internal, built into my muscle memory. The weight of the paddle, the feel of the impact on the ball, the ability to spin it -- all things I wasn’t entirely convinced could be recreated in virtual reality.</p>
+
+<p>
+It turns out, I was wrong. With this game running and that headset on, I have a ping pong table. I also have a permanent opponent who knows what he’s doing (a floating, taunting bunny mask with a paddle). And he’s real good. It took me an hour before I beat him the first time on the easiest setting. He spins the ball. He changes up his serve and speed. He tries to trick shot you, and he dances in your face when he beats you. It’s quite annoying actually, but it taps into that competitive edge where you really do want to beat this bunny, so you keep trying.</p>
+
+<p>
+And it feels good to do so, because everything is spot on. The environment is immediately convincing. The weight of the controller is similar to a paddle, and it provides haptic feedback upon hitting the ball, so it feels like you made contact. The angle, force and spin of the shot feels as it would in a real game of ping pong. It’s still a simulation, so every once in a while, something with the physics will go wonky. But otherwise, this is just as much table tennis as a pickup game down at the bar.
+</p>
+
+<p>
+Bunny man comes at you with 5 difficulties to choose from. But the game really shines with humans. Eleven has online play, and you can pick up a game of table tennis, against a real person, whenever you want. Gestures and voice are fully active, so if you feel like taunting and talking some smack, go right ahead. The game is also in Early Access, so while it seems like a pretty complete experience as it is, even more is promised to come. If you ever enjoyed table tennis, or even bar games, this one’s a no brainer.
+                    </p><br>
+                    <a href="#top">Back to Top</a>
+                    <hr><br>
+                </div>
+                
+            </section>
+            <!-- End Reviews 'page' --> 
+             
+             
+            <!-- Devlog 'page' --> 
+            <input id="slide-devlog-trigger" type="radio" name="slides">
+            <section class="slide slide-devlog">
+                
+                
+                
+                
+                <div class="inner-content">
+                    <h1>Virtual Reality Development</h1>
+                    <h4>Another Dimension of Design</h4>
+                    
+                    <p>VR has been something of a romantic concept in the tech world. Attempts at the technology date back to the early 90s. Hollywood used VR as a theme in films of the era, such as cult classics The Lawnmower Man and Virtuosity. But  the truth was that it was wildly expensive to provide a VR experience. Even if you had the raw horsepower, the graphics of the time were very simplistic. In short, it wasn't ready for the spotlight.
+                    </p>
+
+                    <p>Today, we can <em>literally</em>  provide a VR experience with a cell phone and a cardboard box. Technology has advanced to a point where VR is a viable medium, and as an industry in its infancy, it provides a vast area of new challenges to overcome and ideas to play with. The possiblities are endless.
+                    </p><br><br>
+
+                    
+                        <img src="images/unreal-logo.png" align="left" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="images/unity-logo.png" align="right" />
+                   
+                
+                    
+                    <h4>Available Devlogs:</h4>
+                    
+                    <ul>
+                        <li><a href="#">Devlog #1 - The Engine Dilemma</a></li>
+                    </ul>
+                    
+                    
+                </div>
+            </section>
+            <!-- End Devlog 'page' -->  
             
+             
+            <!-- Game Theory 'page' --> 
+            <input id="slide-theory-trigger" type="radio" name="slides">
+            <section class="slide slide-theory">
+                <h1>A Deeper Look</h1>
+                <h4>The Systems Behind The Fun</h4>
+                
+                <div class="inner-content">
+                    <p>This page is dedicated to the discussion and analyses of games and game theory. There are reasons why some games stand up to the test of time and scrutiny, but thousands upon thousands more fall unnoticed or are quickly forgotten.
+                    </p>
+                    
+                    <p>Games are backed up, and it is the convergence of these systems that give an experience that "it" factor. This isn't just a video game thing. Game theory has broad applications from board and card games, to social media, all the way up to international politics.
+                    </p>
+                    
+                    <p>But don't worry. I'll mostly be focusing on the fun stuff :)</p>
+                    
+                    <h4>Latest Analyses:</h4>
+                <ul>
+                    <li><a href="#">Destiny</a></li>
+                    <li><a href="#">Overwatch</a></li>
+                </ul>
+                </div>
+            </section>
+            <!-- End Game Theory 'page' -->  
+             
+             
+            <!-- Contact 'page' --> 
             <input id="slide-contact-trigger" type="radio" name="slides">
-            
             <section class="slide slide-contact">
                 <div class="headline">
                     <h1>Need A Developer?</h1>
                     <h4>Contact Me</h4>
+                    <p>I'm always on the lookout for a cool new project, so feel free to reach out if you have any interest in working with me. Hope to hear from you soon!</p>
                 </div>
-                
+                <br>
                 <div id="form-container">
                     <div id="contact-form">
                         <form class="forms" id=form1>
@@ -208,7 +477,7 @@
                     </div>
                 </div>
             </section>
-            
+            <!-- End Contact 'page' --> 
              
              
             
