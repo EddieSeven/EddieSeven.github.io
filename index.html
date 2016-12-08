@@ -22,7 +22,7 @@
                 <label for="slide-main-trigger">Home</label>
                 <label for="slide-resume-trigger">Resume</label>
                 <label for="slide-design-trigger">Design</label>
-                <label for="slide-articles-trigger">Articles</label>
+                <label for="slide-games-trigger">Games</label>
                 <label for="slide-reviews-trigger">VR Reviews</label>
                 <label for="slide-devlog-trigger">VR Devlog</label>
                 <label for="slide-theory-trigger">Game Theory</label>
@@ -222,13 +222,32 @@
                 <div>
                     <h1>Latest Games</h1>
                     <h4>Just Playing Around</h4>
+                    <p>I'm getting myself reaquainted with Unity engine for VR development. I threw together a little game as a start. It's called Breaker, it's your classic brick breaker clone like Arkanoid.</p>
+                    
+                    <p>Control the paddle with the mouse, break all the bricks. There are 5 levels, and you only get one life. Good luck!!</p>
                 </div>
                 
                 <div id="breaker-game">
+                    
+                    <h2>"Breaker"</h2>
+                    <h4>By Charles Culpepper</h4>
+                    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="800px"></canvas>
+                    <script type='text/javascript'>
+                  var Module = {
+                    TOTAL_MEMORY: 268435456,
+                    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+                    compatibilitycheck: null,
+                    dataUrl: "./unity-web-test/Release/Unity Web Test.data",
+                    codeUrl: "./unity-web-test/Release/Unity Web Test.js",
+                    memUrl: "./unity-web-test/Release/Unity Web Test.mem",
+
+                  };
+                </script>
+                <script src="./unity-web-test/Release/UnityLoader.js"></script>
                 
                 </div>
             </section>
-            <!-- End Articles 'page' --> 
+            <!-- End Games 'page' --> 
              
              
             <!-- Reviews 'page' --> 
