@@ -219,8 +219,8 @@ header label:hover{
 /********   End Design Page Styles   ********/
 
 
-/********   Articles Page Styles   ********/
-.slide-articles{
+/********   Games Page Styles   ********/
+.slide-games{
     padding: 10em 1em 5em;
     background-color:#58cdf8;
 /*    background-image: url(images/VR-bg.jpg);*/
@@ -232,12 +232,12 @@ header label:hover{
     font-family: "Lato", "Droid Sans", sans-serif;
 }
 
-.slide-articles p{
+.slide-games p{
     margin: 20px 0px 0px;
     padding: 15% auto;
 }
 
-.slide-articles div{
+.slide-games div{
     width: 900px;
     margin: 0px auto;
 }
