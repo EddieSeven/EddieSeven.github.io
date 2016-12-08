@@ -241,6 +241,12 @@ header label:hover{
     width: 900px;
     margin: 0px auto;
 }
+
+.slide-games canvas{
+    margin: 25px auto;
+    margin-left: 50px;
+    text-align: center;
+}
 /********   End Articles Page Styles   ********/
 
 
