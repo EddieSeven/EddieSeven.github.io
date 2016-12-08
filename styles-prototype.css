@@ -282,6 +282,10 @@ header label:hover{
 .slide-reviews ul{
     list-style-type: none;
 }
+
+.slide-reviews img{
+    padding: 8px;
+}
 /********   End VR Reviews Page Styles   ********/
 
 
