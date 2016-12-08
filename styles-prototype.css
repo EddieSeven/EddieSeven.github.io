@@ -169,6 +169,7 @@ header label:hover{
 /*    background-image: url(images/elite-bg.jpg);*/
     background-repeat:no-repeat;
     background-size:contain;
+    background: linear-gradient(160deg, #8030ff, #302048);
     background-position:top;
     overflow:scroll;
     
@@ -227,6 +228,7 @@ header label:hover{
     background-repeat:no-repeat;
     background-size:contain;
     background-position:top;
+    background: linear-gradient(160deg, #58cdf8, #19333c);
     overflow:scroll;
     
     font-family: "Lato", "Droid Sans", sans-serif;
@@ -260,6 +262,7 @@ header label:hover{
 */
     background-size: contain;
     background-position: top;
+    background: linear-gradient(160deg, #2775be, #020c0f);
     overflow: scroll;
     
     
@@ -275,6 +278,10 @@ header label:hover{
     width: 900px;
     margin: 0px auto;
 }
+
+.slide-reviews ul{
+    list-style-type: none;
+}
 /********   End VR Reviews Page Styles   ********/
 
 
@@ -286,6 +293,7 @@ header label:hover{
     background-repeat:no-repeat;
     background-size:contain;
     background-position:top;
+    background: linear-gradient(160deg, #ff973e, #3c230e);
     overflow: scroll;
 }
 
@@ -305,12 +313,8 @@ header label:hover{
     padding: 10px 0px;
 }
 
-.engine-logos{
-    height: auto;
-    width: auto;
-    padding: 25px 0px;
-    margin: 5px auto 25px;
-    text-align: center;
+.slide-devlog ul{
+    list-style-type: none;
 }
 
 /********   End Devlog Page Styles   ********/
@@ -324,6 +328,7 @@ header label:hover{
     background-repeat:no-repeat;
     background-size:contain;
     background-position:top;
+    background: linear-gradient(160deg, #f8586a, #3e161a);
     overflow: scroll;
 }
 
@@ -335,6 +340,10 @@ header label:hover{
 .slide-theory div{
     width: 900px;
     margin: 0px auto;
+}
+
+.slide-theory ul{
+    list-style-type: none;
 }
 
 
@@ -349,6 +358,7 @@ header label:hover{
     background-repeat:no-repeat;
     background-size:contain;
     background-position:top;
+    background: linear-gradient(160deg, #6ade06, #1f370b);
     overflow: hidden;
 }
 
