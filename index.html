@@ -1,574 +1,214 @@
-<!DOCTYPE HTML>
 <html>
-	<head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Codery &amp;&amp; Pixelcraft - Graphics and Development - Fort Collins, CO</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="styles-prototype.css" />
-         <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans|Lato">
-<!--
-        <link href="css/900px.css" rel="stylesheet" media="only screen and (max-width(900px)">
-        <link href="css/720px.css" rel="stylesheet" media="only screen and (max-width(720px)">
-        <link href="css/narrow.css" rel="stylesheet" media="only screen and (max-width(650px)">
--->
-	</head>
+    <head>
 
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<body>
-		
-            <header>
-                <label for="slide-main-trigger"><img src="images/cnp-logo-small.png" /></label>
-                <label for="slide-main-trigger">Home</label>
-                <label for="slide-resume-trigger">Resume</label>
-                <label for="slide-design-trigger">Design</label>
-                <label for="slide-games-trigger">Games</label>
-                <label for="slide-reviews-trigger">VR Reviews</label>
-                <label for="slide-devlog-trigger">VR Devlog</label>
-                <label for="slide-theory-trigger">Game Theory</label>
-                <label for="slide-contact-trigger">Contact Me</label>
-            </header>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+
+        <!-- Latest compiled and minified jQuery -->
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+          crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <title>Charles Culpepper - Design & Development</title>
+
+    </head>
+
+    <body>
+        
+        <nav class="nav navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+                    <!-- Hamburger Button -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        Charles Culpepper
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-nav-demo">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#experience-anchor">Experience</a></li>
+                        <li><a href="#skills-anchor">Skills</a></li>
+                        <li><a href="#work-anchor">Work</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Contact <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+        
+       
+        <div class="container-fluid">
+            <div class="row">
+                <div id="spotlight">
+                    <h2 id="main-headline">Design & Development</h2>
+                    <p id="main-blurb">My name is Charles Culpepper, and I use computers to create media, and solve problems.</p>
+                </div>
+            </div> 
+        
+                    
+        <div class="row">
+            <div class="separator" >
+                <h2 id="main-headline">An Infinite Loop.</h2>
+                <p id="main-blurb">The more things change, the more they stay the same. Development is a cycle of innovation and derivation.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="content" id="bucket-bg">
+                <h2>Click a category to learn more about my path as a developer.</h2>
+                <div class="col-md-4 buckets" id="experience-bucket">
+                    <h2><i class="fa fa-laptop" aria-hidden="true"></i></h2>
+                    <h3>Experience</h3>
+                    <p class="blurbs">A diverse background, with real world experience.</p>
+                </div>
+
+                <div class="col-md-4 buckets" id="skills-bucket">
+                    <h2><i class="fa fa-cogs" aria-hidden="true"></i></h2>
+                    <h3>Skills</h3>
+                    <p class="blurbs">A varied and dynamic skillset.</p>
+                </div>
+
+                <div class="col-md-4 buckets" id="projects-bucket">
+                    <h2><i class="fa fa-wrench" aria-hidden="true"></i></h2>
+                    <h3>Projects</h3>
+                    <p class="blurbs">Some of my recent work.</p>
+                </div>
             
-         <div class="wrapper">
-            <!-- Home'page' --> 
-		  <input id="slide-main-trigger" type="radio" name="slides" checked>
-            <section class="slide slide-main">
-                <div id="logo">
-                <object align="center">
-                    <embed src="images/CnP-Proto-3.svg" alt="Codery & Pixelcraft Logo">
-                </object>
-                </div>
-                <div id="welcome">
-                    <h1>Codery &amp;&amp; Pixelcraft</h1>
+                <p>*This website is still being developed.</p>
+            </div>
+        </div>
+                    
+        <div class="row">
+            <div class="separator">
+                <a name="experience-anchor"></a>
+                <h2 id="main-headline">Eye for Design. Mind for Development.</h2>
+                <p id="main-blurb">The line between designer and developer is beginning to blur. I'm looking to erase it entirely.</p>
+            </div>
+        </div>
 
-                    <h5>By: Charles Culpepper</h5>
-                    <br>
+            <div class="row">
+                <div id="exp-bg">
+                <h2 id="main-headline">Experience</h2>
+                <p id="main-blurb">Pactice Makes Perfect.</p>
+                <div class="container" id="experience">
+                    <div class="col-md-5">
+                        <p>I know things.</p>
+                    </div>
                     
-                    <h3>Welcome</h3>
-                    
-                    <br>
-                    
-                    <p>This is a website dedicated to exhibiting both my work and my interests!</p>
-                    <p>There's a variety of content on the site that is meant to exhibit creativity and ability in writing, web/game dev, layout, typography, graphic and UX design. </p>
-                    
-                    <p>One of the latest innovations in my field is virtual reality. It's currently very much a "wild west" in terms of development. Everyone is still figuring things out. To this end, I'm going to be reviewing some virtual reality experiences, both as a fun project for myself, and as a way to think criticially about the trends in VR, what seems to be working or not, and why. </p>
-                    
-                    <p>I'll be recording my own forays into the medium, in writing, podcasts, images and soon (hopefully), video. I invite you to join me in learning about this intriguing new frontier in the devlog page.</p>
-                        
-                        
-                    <p>Take a look around, hope you like what you see!</p>
+                    <div class="col-md-5">
+                        <p>I know more things.</p>
+                    </div>
                 </div>
-                
-            </section>
-            <!-- End Home'page' --> 
+                    </div>
+            </div>
             
-             
-            <!-- Resume 'page' --> 
-            <input id="slide-resume-trigger" type="radio" name="slides">
-            <section class="slide slide-resume">
-                
-                <div class="headline">
-                    <h1>Varied and Cohesive Skillset</h1>
-                    <h4>An Eye for Design. A Mind for Code.</h4>
-                    
-                </div>
-                
-                <br>
-                
-                <div id="skills">
-                    <h2>Charles Culpepper</h2>
-                    
-                    <table align=center>
-                        <th colspan = 3>Skills</th>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Fluent in Spanish</li>
-                                <li>HTML/CSS/JavaScript</li>
-                                <li>OSX Tiger - macOS Sierra</li>
-                                <li>Windows XP/Windows7, 8, 10</li>
-                                <li>Linux, Command Line</li>
-                            </ul>
-                        </td>
-                    
-                        
-                    
-                        <td>
-                            <ul>
-                            <li>Autodesk Maya</li>
-                            <li>Blender</li>
-                            <li>Unreal Engine</li>
-                            <li>Unity Engine</li>
-                            <li>Adobe Creative Suite</li>
-                            </ul>
-                        </td>
 
-                        <td>
+            <div class="row">
+                <div class="separator">
+                    <a name="skills-anchor" class="anchor"></a>
+                    <h2 id="main-headline">The Constant Pursuit of Progress.</h2>
+                    <p id="main-blurb">Technology is change. It's constantly evolving and taking on new and exciting forms. The ability to adapt, is a vital skill.</p>
+                </div>
+            </div>
+            
+            
+
+            <div class="row">
+                <div id="skills-bg">
+                    <h2 id="main-headline">Skills</h2>
+                    <p id="main-blurb">Anyone can do a job with the right tools. I strive to learn as many tools as possible.</p>
+                    <div class="container" id="skills">
+                        <div class="col-md-5">
+                            <p>Design Skills</p>
                             <ul>
-                            <li>Java</li>
-                            <li>C++/C#</li>
-                            <li>Python</li>
-                            <li>MS Office</li>
-                            <li>CommandLine/Terminal</li>
+                                <li>Stuff I know.</li>
+                                <li>Things I know.</li>
+                                <li>Crap I know.</li>
+                                <li>Junk I know.</li>
                             </ul>
-                        </td>
-                    </tr>
-                    
-                    </table>
-                    <h3>Objective</h3>
-                    <img src="images/bio-pic-small.jpg" align="right"/>
-                    <p>
-                        To pursue a career as a multimedia designer and developer, showcasing my creativity and contributing to the growth and success of both myself and my employer.
-                    </p>
-                </div>
-                
-                <br>
-                
-                <div id="work-experience">
-                    
-                <h3>Work Experience</h3>
-                    <p>I'm currently studying for a CS degree at Colorado State University and working at Apple part time. Any gaps in time seen between positions were filled with studies and freelance graphic and web work.</p>
-                    
-                    <br>
-                     <h4>AppleCare Technical Advisor, Apple Inc., Telecommute from Fort Collins, CO 2016 - present</h4>
-                    <ul>
-                        <li><h5>Duties:</h5></li>
-                        <li>Technical Support</li>
-                        <li>Promotion of Company Products</li>
-                        <li>Various Training Programs</li>
-                        <li>Telecommuting Structure</li>
-                    </ul>
-                    
-                    <br>
-                    <h4>Office Manager, Bravo Dental Clinic, Hempstead, NY 2010-2012</h4>
-                    <ul>
-                        <li><h5>Duties:</h5></li>
-                        <li>Manage and Supervise Employees</li>
-                        <li>Billing &amp; Payroll</li>
-                        <li>Various administrative  tasks</li>
-                        <li>Delegation of Tasks</li>
-                        <li>Day to Day Accounting</li>
-                        <li>Coordination of Marketing and Website</li>
-                    </ul>
-                    
-                    <br>
-                    <h4>Web Content Editor, MedNet Technologies, Elmont, NY 2007-2008</h4>
-                    <ul>
-                        <li><h5>Duties:</h5></li>
-                        <li>Writing and Editing for Web</li>
-                        <li>Formatting sites, text and colors with CSS</li>
-                        <li>Cropping, editing and optimizing images for the Web</li>
-                        <li>Proofreading and publishing</li>
-                        <li>Customer Service</li>
-                    </ul>
-                    
-                    <br>
-                    <h4>Supervisor, Starbucks Coffee Corporation, Massapequa, NY 2004-2007</h4>
-                    
-                    <ul>
-                        <li><h5>Duties:</h5></li>
-                        <li>Writing and editing for Web</li>
-                        <li>Delegation of responsibilities ot others</li>
-                        <li>Various administrative and retail tasks</li>
-                        <li>Supervision and management of co-workers</li>
-                        <li>Customer Service</li>
-                    </ul>
-                    
-                    <br>
-                    <h4>Database Administrator, Bravo Dental Clinic, Hempstead, NY 2001-2004</h4>
-                    <ul>
-                        <li><h5>Duties:</h5></li>
-                        <li>Convert office to a paperless standard</li>
-                        <li>Organization and maintenance of patient database</li>
-                        <li>Various administrative  tasks</li>
-                        <li>Scheduling and Billing</li>
-                        <li>Customer Service</li>
-                    </ul>
-                    
-                </div>
-            </section>
-            <!-- End Resume 'page' --> 
-             
-             
-            <!-- Design 'page' -->  
-            <input id="slide-design-trigger" type="radio" name="slides">
-            <section class="slide slide-design">
-                <div>
-                    <h1>Web and Graphics Design</h1>
-                    <h4>From Game Development to Typography</h4>
-                </div>
-                <div class="gallery">
-                    <h3>Logo &amp; Branding Gallery</h3>
-                        <div class="thumbs">
-                    <img src="images/new-nyjets-logo-green.png" onmouseover="preview.src=img1.src" alt="New York Jets Mock Logo in Green" class="gallery" name="img1">
-                    <img src="images/new-nyjets-logo-white.png" onmouseover="preview.src=img2.src" alt="New York Jets Mock Logo in White" class="gallery" name="img2">
-                    <img src="images/new-broncos-logo-wip.png" onmouseover="preview.src=img3.src" alt="Denver Broncos Mock Logo Work In Progress" class="gallery" name="img3">
-                    <img src="images/maelstrom-logos.png" onmouseover="preview.src=img4.src" alt="Logo Mockups for a Waterport Company" class="gallery" name="img4">
-                    <img src="images/neo-pixel-logo.png" onmouseover="preview.src=img5.src" alt="New York Jets Mock Logo in White" class="gallery" name="img5">
-                    <img src="images/club-kaos-logo.png" onmouseover="preview.src=img6.src" alt="Denver Broncos Mock Logo Work In Progress" class="gallery" name="img6">
-                    <img src="images/trans-japan-logo.png" onmouseover="preview.src=img7.src" alt="Denver Broncos Mock Logo Work In Progress" class="gallery" name="img7">
                         </div>
-                    <div class="preview" align="left">
-		<img name="preview" src="images/new-nyjets-logo-green.png" alt="New York Jets Mock Logo in Green"/>
-	</div>
-                </div>
-            </section>
-            <!-- End Design 'page' --> 
-             
-             
-            <!-- Games 'page' -->  
-            <input id="slide-games-trigger" type="radio" name="slides">
-            <section class="slide slide-games">
-                <div>
-                    <h1>Latest Games</h1>
-                    <h4>Just Playing Around</h4>
-                    <p>I'm getting myself reaquainted with Unity engine for VR development. I threw together a little game as a start. It's called Breaker, it's your classic brick breaker clone like Arkanoid.</p>
-                    
-                    <p>Control the paddle with the mouse, break all the bricks. There are 5 levels, and you only get one life. Good luck!!</p>
-                </div>
-                
-                <div id="breaker-game">
-                    
-                    <h2>"Breaker"</h2>
-                    <h4>By Charles Culpepper</h4>
-                    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="800px"></canvas>
-                    <script type='text/javascript'>
-                  var Module = {
-                    TOTAL_MEMORY: 268435456,
-                    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-                    compatibilitycheck: null,
-                    dataUrl: "./unity-web-test/Release/Unity Web Test.data",
-                    codeUrl: "./unity-web-test/Release/Unity Web Test.js",
-                    memUrl: "./unity-web-test/Release/Unity Web Test.mem",
 
-                  };
-                </script>
-                <script src="./unity-web-test/Release/UnityLoader.js"></script>
-                
-                </div>
-            </section>
-            <!-- End Games 'page' --> 
-             
-             
-            <!-- Reviews 'page' --> 
-            <input id="slide-reviews-trigger" type="radio" name="slides">
-            <section class="slide slide-reviews">
-                <div>
-                    <a name="top"></a>
-                    <br>
-                <h1>Virtual Reality Reviews</h1>
-                <h4>Exploring a New Medium</h4>
-                <p>Virtual Reality is finally in family homes worldwide. While expensive, VR is now within reach of the average consumer. With the hardware readily available, it falls on the developers to nourish and grow the new market, and that is only accomplished by the software; the experiences we provide.
-                    </p>
-                <p>This page is dedicated to that effort. Hundreds of devs are crafting experiences that were unachievable before 2016. I'll be checking out what my peers have been working on and letting my readers know what experiences are worthwhile. Hopefully I learn a thing or two long the way!</p><br>
-                
-                <h4>Latest Reviews:</h4>
-                    <ul>
-                        <a href="#elite-review"><li>Elite: Dangerous - Space Flight/Combat/Exploration</li></a>
-                        <a href="#google-earth-review"><li>Google Earth VR - Earth Exploration/Photogrammetry</li></a>
-                        <a href="#climbey-review"><li>Climbey - Climbing Based Platformer</li></a>
-                        <a href="#left-hand-review"><li>Left-Hand Path - Linear Dungeon Crawler</li></a>
-                        <a href="#eleven-review"><li>Eleven Table Tennis - Ping Pong</li></a>
-                    </ul>
-                <br>
-                <h4>Upcoming Reviews</h4>
-                    
-                    <ul>
-                        <li>Trickster VR - Procedurally Generated Dungeon Crawler</li>
-                        <li>Hotdogs, Horseshoes and Hand Grenades VR - Firing Range Simulator</li>
-                        <li>Arizona Sunshine - Open World Survival Based Zombie Shooter</li>
-                        <li>Thrill of the Fight - Boxing Simulator</li>
-                    </ul>
-                    <a name="elite-review"></a>
-                </div>
-                
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                
-                <hr>
-                <br>
-                
-                <div class="review">
-                    
-                    <h3>Elite: Dangerous</h3>
-                <p>
-                I have my own spaceship. That’s what it means to play this game in VR.</p>
-
-
-<p>Now, I don’t mean there’s a graphic on my screen that looks like a ship. I mean I’m literally, physically walking around <em>the bridge of my ship</em>. It always seemed spacious on a screen, but VR really brings it to another level</p>
-
-
-<p>Elite: Dangerous is an interesting case to study because it started out, and remains, a non-VR game. You don’t need any sort of headset or super-computer to be able to join in. This allows for much clearer parallels between the two presentations, and can help highlight the strengths and weaknesses of both mediums.</p>
-
-
-<p><img src="images/elite-station-landing.jpg" align="right" alt="Landing a ship in Elite Dangerous" />Elite: Dangerous is an attempt at a semi-realistic space simulation. It takes place over a millennium into the future, where interstellar travel is commonplace.  Aside from that, Elite provides a 1 to 1 recreation of the Milky Way Galaxy. You read that right. One to one. Billions of stars, each potentially inhabited by a solar system. It takes real world months of travel, to get from one end to the other, jumping from start to star at several hundred times the speed of light. At the moment, you can’t land on planet with an established atmosphere (that’s in the works), but you can land on anything else, from rocky and icy planets, to asteroids, derelict ships, space stations and moons, there is a literal entire galaxy to explore.</p>
-
-
-<p>That description alone is pretty exciting for me. I like this kind of stuff, and I’m a gamer. But playing this game in VR is beyond that. I don’t have words to express how it feels warp in front of a star, or survive an impromptu starship fight. The only way to explain it is that you honestly feel like you’re there. Your hands move with the throttle and stick in-game, just as they would. You feel your stomach lurch if you’re maneuvers are a little too evasive. And you feel yourself sit back in your chair every time you warp, like an invisible force is pushing you back.</p>
-
-
-<p>But not everything is perfect of course. You can’t see your keyboard, so if you want to put in a specific destination, you’d better learn to touch type. It can also be jarring. I’ve spent quite a few hours in VR and have my legs under me, but it can make people motion sick. And finally, Elite looks beautiful on a standard 4K monitor, so you’d be giving that up. VR graphics couldn’t possibly hope to keep up, so the end result is admittedly blurrier, especially text.</p>
-                
-<p>At the end of the day you're giving up the pretty HD sheen of a 2016 video game and exchanging it for immersion, presence inside what is basically another world. I may be biased, but I find that trade off worth it. If you have any way to experience this with a VR headset, I couldn't recommend the experience enough, but even if you don't, the game might be worth a shot if only to see what you're missing out on.</p><br>
-                    <a name="google-earth-review"></a>
-                    <a href="#top">Back to Top</a>
-                    <hr>
-                    </div>
-                
-                <div class="reviews">
-                    <h3>Google Earth VR</h3>
-                    <p><img src="images/google-earth-vr-csu.jpg" align="right" alt="Flying over CSU in Google Earth VR" />
-                    There’s not too much to say about this one as it’s fairly self explanatory, but the feeling is so amazing, I thought it was worth a mention. This is a version of the Google Earth we all know and love, in VR.</p>
-
-<p>
-What does that mean? Pick a place, ANY place, and you can go there. You can spin the earth like a globe and plop yourself down wherever you desire. Once you’re on the ground, you can choose to fly around too. You kind of feel like Superman.</p>
-
-<p>
-It’s not perfect. It takes times for the maps to render, so for a bit, you’re surrounded by what looks like a world made of clay. And most of it is constructed from satellite imagery, so some cities and towns may be generally pretty flat. Still, it’s an odd sensation to be able to zoom into your own backyard and see what you’re used to seeing outside your real life door.</p>
-
-<p>
-This technology brings up a lot of interesting applications for the future of VR. You can visit work sites without actually going. You can plan out parks and civil plans for a town or city. What about new contruction? They might be able to plan a development or build a house based on what they can see in Google Earth. Real estate agents can give tours of houses and towns without going anywhere.</p>
-
-<p>
-Virtual reality is in its infancy, and there’s already wondrous applications of it that make you question how it can impact life and business in the future. This is only the beginning. 10 years ago, there was no such thing as an iPhone, and now it’s ubiquitous. Who knows where VR will be in ten years time.
-                    </p><br>
-                    <a name="climbey-review"></a>
-                    <a href="#top">Back to Top</a>
-                    <hr><br>
-                </div>
-                
-                
-                <div class="reviews">
-                <h3>Climbey</h3>
-                    <p>
-                    Climbey is a floating obstacle course game. VR is currently limited to hand tracking; it can’t see your body or your legs. So the concept of an “obstacle course” game seems rather unintuitive.</p>
-
-<p><img src="images/climbey-screenshot.jpg" align="right" alt="Thumbs up in Climbey" />
-It turns out, you don’t need a body to jump around! Climbey’s main mechanic, as it’s title suggests, is climbing. The worlds are made of different colored blocks with different properties. Some you can grab and climb, other you can only stand on. You can also “jump”, with a creative little game mechanic where you can “grab” the air around you, and use it as leverage to propel yourself in whatever direction you aim. It takes a little getting used to, but once it clicks it totally makes sense.</p>
-
-<p>
-The point of the game is simple, just get to the top. These are floating worlds, so if you look down at any given point, there is a real sense of height. In addition to the levels the game comes with, it includes a level editor, so everyone who owns the game can make their own custom courses for others to play all over the world. At that point, you have an inifinite amount of levels to try to climb.</p>
-
-                    <p>
-It’s addictive too. Once you get your bearings, you start leaping and climbing all over the place, like some sort of parkour simulator. It’s a great time, and one of the most memorable experiences I’ve had in VR.</p>
-
-<p>
-In all honesty, it seems rather simple when I explain it. But that’s the thing with VR, it can make even the most mundane of tasks seem like a magical experience. See you guys at the top!
-                    </p><br>
-                    <a name="left-hand-review"></a>
-                    <a href="#top">Back to Top</a>
-                    <hr><br>
-                </div>
-                
-                <div class="reviews">
-                <h3>Left-Hand Path</h3>
-                    <p>
-                    The dark. That’s where you start in this role playing adventure in the style of the popular Dark Souls series of games. You’re in a pitch black room, with a voice guiding you to light your staff with a spell. You wave your hand in a some sort of rune pattern, and suddenly your staff ignites in light, and you find yourself sitting in a cellar of an unknown (yet very creepy) dungeon. You waved your hand and made <em>magic</em>.</p>
-
-<p><img src="images/left-hand-path-screen-shot.jpg" align="right" alt="Hurling fireballs in Left-Hand Path" />
-That’s the basic experience the developers are going for here. They want you to feel like a powerful mage or sorcerer, and they try to give you that experience of being able to wave your hands and wield magic. The effect is convincing. In my mind, I was casting fireballs and protective shields and all sorts of fun stuff with my own hands and staff. The entire setting is dark, the only light you ever see is from soft torch light or the magic glow emitted by your trusty staff. All spells take the form of a gesture with your “free” hand, and is aimed by the staff in your other hand.</p>
-
-<p>
-The enemies hide, and try to ambush you from dark corners. This isn’t a standard game, you can’t just point and shoot. If a demon comes flying out at you from a dark corner, you have to have the mental fortitude to stand your ground, cast your spell, and aim it, all before the monster gets to you. You have the ability to teleport, so you may be able to buy yourself some time, but that too has to be aimed, so even evasion can cost you crucial seconds that will likely mean the end of you.</p>
-
-<p>
-There’s puzzles and mysteries riddled in the rooms of the dungeon as well. Advancing past some points requires the casting of a ritual, a more complex series of actions that may involve items or several other spells to complete. And at the beginning with only your light spell, so you start off defenseless and need to build your repertoire of abilities, with most of the dungeon locked off to you until you gain access to more rituals in order to advance</p>
-
-<p>
-Like most VR games, Left Hand Path is in Early Access, and development continues past the point I reached. There’s currently about 6 hours of unique gameplay in the game, with the goal being to triple it in size by the time they reach a full version. The game is already in great shape both graphically and mechanically, so if you were looking for a good fantasy RPG experience in VR, this is certainly a good option. Just keep in mind, while it’s not particularly described as a horror title, it’s a scary place to be in.
-                    </p><br>
-                    <a name="eleven-review"></a>
-                    <a href="#top">Back to Top</a>
-                    <hr><br>
-                </div>
-                
-                <div class="reviews">
-                <h3>Eleven: Table Tennis</h3>
-                    <p>
-                I don’t know about you guys, but my significant other just refuses to let me replace the dining table with a ping pong table. You can eat off ping pong tables!! But you can’t ping pong on dining tables. Alas, that particular battle may be unwinnable, but VR has given me a solution. A virtual ping pong table!</p>
-
-<p>
-Ping pong, or to be more formal, table tennis, has long been a side hobby of mine. I used to have a table growing up, but lately it’s been more of a bar sport. If I had the space, I would almost certainly have one by now, but this VR game is absolutely the next best thing.</p>
-
-<p><img src="images/eleven-table-tennis-screen.jpg" align="right" alt="Taking on Bunny Mask in Eleven: Table Tennis" />
-As someone who’s played table tennis pretty extensively, I know what it’s supposed to feel like to play. It’s internal, built into my muscle memory. The weight of the paddle, the feel of the impact on the ball, the ability to spin it -- all things I wasn’t entirely convinced could be recreated in virtual reality.</p>
-
-<p>
-It turns out, I was wrong. With this game running and that headset on, I have a ping pong table. I also have a permanent opponent who knows what he’s doing (a floating, taunting bunny mask with a paddle). And he’s real good. It took me an hour before I beat him the first time on the easiest setting. He spins the ball. He changes up his serve and speed. He tries to trick shot you, and he dances in your face when he beats you. It’s quite annoying actually, but it taps into that competitive edge where you really do want to beat this bunny, so you keep trying.</p>
-
-<p>
-And it feels good to do so, because everything is spot on. The environment is immediately convincing. The weight of the controller is similar to a paddle, and it provides haptic feedback upon hitting the ball, so it feels like you made contact. The angle, force and spin of the shot feels as it would in a real game of ping pong. It’s still a simulation, so every once in a while, something with the physics will go wonky. But otherwise, this is just as much table tennis as a pickup game down at the bar.
-</p>
-
-<p>
-Bunny man comes at you with 5 difficulties to choose from. But the game really shines with humans. Eleven has online play, and you can pick up a game of table tennis, against a real person, whenever you want. Gestures and voice are fully active, so if you feel like taunting and talking some smack, go right ahead. The game is also in Early Access, so while it seems like a pretty complete experience as it is, even more is promised to come. If you ever enjoyed table tennis, or even bar games, this one’s a no brainer.
-                    </p><br>
-                    <a href="#top">Back to Top</a>
-                    <br>
-                </div>
-                
-            </section>
-            <!-- End Reviews 'page' --> 
-             
-             
-            <!-- Devlog 'page' --> 
-            <input id="slide-devlog-trigger" type="radio" name="slides">
-            <section class="slide slide-devlog">
-                
-                
-                
-                
-                <div class="inner-content">
-                    <h1>Virtual Reality Development</h1>
-                    <h4>Another Dimension of Design</h4>
-                    
-                    <p>VR has been something of a romantic concept in the tech world. Attempts at the technology date back to the early 90s. Hollywood used VR as a theme in films of the era, such as cult classics The Lawnmower Man and Virtuosity. But  the truth was that it was wildly expensive to provide a VR experience. Even if you had the raw horsepower, the graphics of the time were very simplistic. In short, it wasn't ready for the spotlight.
-                    </p>
-
-                    <p>Today, we can <em>literally</em>  provide a VR experience with a cell phone and a cardboard box. Technology has advanced to a point where VR is a viable medium, and as an industry in its infancy, it provides a vast area of new challenges to overcome and ideas to play with. The possiblities are endless.
-                    </p><br><br>
-
-                    
-                        
-                   
-                
-                    
-                    <h4>Available Devlogs:</h4>
-                    
-                    <ul>
-                        <li><a href="#">Devlog #1 - The Engine Dilemma</a></li>
-                    </ul><br>
-                    
-                    
-
-
-                    <h2>The Engine Dilemma</h2><br>
-                    <img src="images/unreal-logo.png" align="center" />&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img src="images/unity-logo.png" align="center" />
-                    <p>
-Computer graphics are a complex thing. There’s vertexes and vectors and matrices and an unbelievable amount of math going on in order to be able to produce what looks like a movie scene or a video game. But that’s just the images on the screen. Objects have behaviors, physics, that affect how those objects interact with each other and their environment. That’s a whole other set of calculations that need to be performed. Developers aren’t doing all that math of course, the computer does most of the work. We input formulas in the form of algorithms to get all this going, and tweak the numbers to get the desired effect. Pack it all together into a single, cohesive software platform and the result is an engine.</p>
-
-
-<p>It all sounds a lot scarier than it is. Dreamweaver is a commonly used web design application, that allows you to build websites by editing what it looks like instead of writing HTML and CSS. Dreamweaver is an engine. You just don’t need physics on the web, so it’s a simple engine. Gaming engines are some of the most complex because they have to worry about all of it. There’s art and animation, usually in 3D, that needs to be calculated and rendered. Physics need to be calculated for objects interacting, the strength of gravity, and the feel of movement. A consistent UX has to be designed, typically presented with special effects. And then the game mechanic itself is a real time, ongoing math calculation. A typical first person shooter is calculating a pretty significant amount of data, things like: the size of the map, the position of the player in the map, the speed of the player, the weapon of the player, how the weapon acts when fired, how the player reacts when shot, how much ammo is in the clip, how much health the player has, etc. The list goes on and on. While there are many benefits to creating an engine from scratch, there is also something to be said for simply using the best solution already available.</p>
-
-<p>
-That’s where Unreal Engine and Unity come in. These two are the current heavyweight engine champions, the most commonly used platforms to power all sorts of interactive media experiences. The debate between the two has always been fierce. I have bounced between the two myself over the years. But the debate is picking up a lot of momentum with the onset of VR. You can be in another world of your own creation in less than an hour, so interest in developing has really picked up. I’m going through the process of choosing an engine myself, so I thought it’d be interesting to write about my thought process as I went through it.</p>
-
-<h4>Unity 5</h4>
-
-<p>
-Unity is a relative newcomer to the engine world. It was developed to be an easy to get into engine, enabling relative newcomers to make their very own versions of games for a variety of platforms. It was a WYSIWYG editor for games. That’s a tiny bit counter intuitive. There was still a bit of code involved, so it wasn’t entirely about dropping things where you want them and hitting play (although nowadays that’s possible). But given the complexity of the other engines, it was much simpler.</p>
-
-<p>
-The tradeoff is power. There’s a reason those other engines are complex, they could do much more, especially at the start. This lingers to this day, Unity is widely considered the accessible engine, while other engines, Unreal especially, are thought of as technical powerhouses. And yes, to an extent, it’s still true. But I think we’re getting to a point where there’s a sort of parity between the platforms. You can get away almost any game design with Unity, and you can make it look really good as well. There’s a large community, with a lot of helpful people that are willing to help get you going. The Unity Asset Store is filled with amazing tech that you can drop right into your game. It’s faster to start and to get to a finished product. Unity can do 90% of anything Unreal can do, and you’ll likely do it faster.</p>
-
-<p>
-Unity uses C# as the programming language so it’s a modern, flexible language that’s easier to understand (and harder to mess up in) than some other languages. It’s still powerful though, and can handle most data structures you can throw at it. It interfaces with either Monodevelop or Visual Studio, so for coders, it has a familiar look. It has a learning curve, but with so many resources at your disposal, you’ll get the hang of it relatively quickly regardless of skill level. That’s what it was designed for.</p>
-
-<h4>Unreal Engine 4</h4>
-
-<p>
-That said, 90% is still not 100%. Unreal is every bit the powerhouse it gets praise for, but that has its own pitfalls. At the top of the list, it gives you full access to the system and uses C++. You can mess some stuff up real good if you don’t know what you’re doing. C++ is an incredibly powerful language which suffers for the same reason Unreal does as an engine; it’s a lot to wrap your mind around. Recent versions have made a very commendable effort to rememdy that, with the addition of Blueprints. Blueprints is a visual coding systems that allows you to “code in C++” by manipulating graphical objects, and making visual connections between the inputs and outputs of those programs. It’s like you’re wiring together a program the way you would a sound system. It’s pretty cool, and still C++, so very powerful.</p>
-
-<p>
-Unreal uses this strength for it’s most noticeable advantage, which is graphics. You can pretty much achieve real time photo realism from an interactive object in Unreal. You’ll need quite a computer to power it, but still it’s possible. Unreal has more advanced shading and lighting. It supports more channels for textures, and allows better control over particles and effects. It is perhaps the “industry standard” professional engine, used by the biggest studios around the world, for some of the most popular franchises, like Gears of War, Mass Effect and Borderlands.</p>
-
-
-<h4>Licensing</h4>
-
-<p>
-Technology advances more than just hardware. The software behind all of these systems advances just as much. Something that only Unreal could do a few years ago, is a click and a drag in Unity today. The deciding factor might come down to a business decision.</p>
-
-<p>
-Unity is a set price per computer installation, once you exceed a threshold of $100K in revenue. Unreal is a flat 5% off the top for the lifetime of the product. These are two very different structures, and the economics of each change depending on the situation. I’m approaching this as an independent VR developer. It’s unlikely for me to exceed Unity’s threshold, and if I do, I made $100K so I’m good with it. Larger scale studios with higher projections might want to work with Unreal’s model, as 5% might work out less than the licensing of each individual machine involved in the project.</p>
-
-
-<h4>Final Choice</h4>
-
-<p>
-For my uses, namely VR as a solo dev, I’m choosing Unity for my first project. The pricing specifically benefits my situation, and Unity’s main advantage is speed and accessibility. VR is a brand new medium that’s just starting to take off as I write this. I think it’s the best time to get into developing for VR, and the speed at which you’re able to get to market is vital. That’s where Unity shines, so for now, that’s where I’ll start.
-                    </p>
-                </div>
-            </section>
-            <!-- End Devlog 'page' -->  
-            
-             
-            <!-- Game Theory 'page' --> 
-            <input id="slide-theory-trigger" type="radio" name="slides">
-            <section class="slide slide-theory">
-                <h1>A Deeper Look</h1>
-                <h4>The Systems Behind The Fun</h4>
-                
-                <div class="inner-content">
-                    <p>This page is dedicated to the discussion and analyses of games and game theory. There are reasons why some games stand up to the test of time and scrutiny, but thousands upon thousands more fall unnoticed or are quickly forgotten.
-                    </p>
-                    
-                    <p>Games are backed up, and it is the convergence of these systems that give an experience that "it" factor. This isn't just a video game thing. Game theory has broad applications from board and card games, to social media, all the way up to international politics.
-                    </p>
-                    
-                    <p>But don't worry. I'll mostly be focusing on the fun stuff :)</p>
-                    
-                    <h4>Latest Analyses:</h4>
-                <ul>
-                    <li><a href="#">Destiny</a></li>
-                    <li><a href="#">Overwatch</a></li>
-                </ul>
-                </div>
-            </section>
-            <!-- End Game Theory 'page' -->  
-             
-             
-            <!-- Contact 'page' --> 
-            <input id="slide-contact-trigger" type="radio" name="slides">
-            <section class="slide slide-contact">
-                <div class="headline">
-                    <h1>Need A Developer?</h1>
-                    <h4>Contact Me</h4>
-                    <p>I'm always on the lookout for a cool new project, so feel free to reach out if you have any interest in working with me. Hope to hear from you soon!</p>
-                </div>
-                <br>
-                <div id="form-container">
-                    <div id="contact-form">
-                        <form class="forms" id=form1>
-                            <p class="form-name">
-                                <input name="name" type="text" placeholder="Name" id="f-name" />
-                            </p>
-                            <p class="form-email">
-                                <input name="email" type="text" placeholder="E-Mail" id="f-email" />
-                            </p>
-                            
-                            <p class="form-message">
-                                <textarea name="message" type="text" placeholder="Comment" id="f-message"> </textarea>
-                            </p>
-                            <div class="submit"><input type="submit" value="SEND" id="contact-submit-button" />
-                            </div>
-                        </form>
+                        <div class="col-md-5">
+                            <p>Development Skills</p>
+                            <ul>
+                                <li>Stuff I know.</li>
+                                <li>Things I know.</li>
+                                <li>Crap I know.</li>
+                                <li>Junk I know.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <!-- End Contact 'page' --> 
-             
-             
+            </div>
+
+            <div class="row">
+                <div class="separator">
+                    <a name="work-anchor"></a>
+                    <h2 id="main-headline">One Person Can Change the World.</h2>
+                    <p id="main-blurb">It happens all the time. Sometimes all it takes is an idea, and the ability to pull it off.</p>
+                </div>
+            </div>
             
-            <!--
-		<div id="main" class="sliding-panel">
-			<h1>Codery & Pixelcraft</h1>
-            <div class="spinner"></div>
-		</div>
-		
+            <div class="row">
+                <div id="work-bg">
+                    
+                    <h2 id="main-headline">Work</h2>
+                    <p id="main-blurb">It doesn't take much to talk the talk. Actions speak louder than words.</p>
+                    <div class="container" id="work">
+                        <div class="col-md-5">
+                            <p>Graphic Projects</p>
+                            <ul>
+                                <li>Stuff I know.</li>
+                                <li>Things I know.</li>
+                                <li>Crap I know.</li>
+                                <li>Junk I know.</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-5">
+                            <p>Development Projects</p>
+                            <ul>
+                                <li>Stuff I know.</li>
+                                <li>Things I know.</li>
+                                <li>Crap I know.</li>
+                                <li>Junk I know.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div id="footer">
+                    <div class="col-md-4 footer-buckets">Charles Culpepper</div>
+                    <div class="col-md-4 footer-buckets">Development & Design</div>
+                    <div class="col-md-4 footer-buckets">Email: charlescd7@gmail.com</div>
+                </div>
+            </div>  
+        </div>
             
-            
-            <div id="resume-page"></div>
-            <div id="gallery-page"></div>
-            <div id="vr-page"></div>
-            <div id="contact-page"></div>
-		-->
-		
-		
-		
-		</div>
-	</body>
+
+
+        <script type="text/javascript" src="portfolio.js"></script>
+    
+    </body>
 </html>

@@ -1,0 +1,192 @@
+body{
+    font-size: 62.5%;
+    background-color: #888888;
+}
+
+p{
+    font-size: 1em;
+    line-height: 130%;
+}
+
+.row{
+    text-align: center;
+}
+
+.container-fluid, .container{
+    font-size: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.content {
+    height: auto;
+    text-align: left;
+    margin: 0px;
+    padding: 10% 10%;
+    background-color: ;
+    width: 100%;
+}
+
+.content h1{
+    font-size: 7em;
+    line-height: 1em;
+}
+
+.content h2{
+    font-size: 2.3em;
+    line-height: 1em;
+    text-align: center;
+    color: white;
+}
+
+.content h3{
+    font-size: 1.2em;
+    line-height: 1em;
+    text-align: center;
+    color: white;
+}
+
+.content p{
+    line-height: 130%;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.content hr{
+    width: 22%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#spotlight{
+    margin: 50px 0px 0px;
+    padding-top: 250px;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), rgba(0,0,0,0.55) url('./images/tim-marshall-173957.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+#bucket-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), rgba(0,0,0,0.55) url('./images/priscilla-du-preez-156157.jpg') no-repeat center;
+    background-size: cover;
+    
+}
+
+#exp-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), rgba(0,0,0,0.55) url('./images/jakob-owens-335000.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#skills-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), rgba(0,0,0,0.55) url('./images/glenn-carstens-peters-204767.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#work-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), rgba(0,0,0,0.55) url('./images/ilya-pavlov-87438.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#exp-bg, #skills-bg, #work-bg{
+    margin: 0px;
+    padding: 50px 15%;
+    color: white;
+    min-height: 500px;
+    text-align: center;
+}
+
+.separator{
+    height: 125px;
+    margin: 0px;
+    padding: 5px 10% 5px;
+    background-color: crimson;
+}
+
+#experience{
+}
+
+#experience p{
+    font-size: .5em;
+    color: white;
+}
+
+#skills p{
+    font-size: .7em;
+    color: white;
+}
+
+#skills ul{
+    font-size: .5em;
+    color: white;
+    list-style: none;
+}
+
+#work p{
+    font-size: .7em;
+    color: white;
+}
+
+#work ul{
+    font-size: .5em;
+    color: white;
+    list-style: none;
+}
+
+#main-headline, #main-blurb{
+    text-align: center;
+}
+
+.buckets{
+    height: 250px;
+    width: 30%;
+    text-align: center;
+    font-size: 1.7em;
+    color: #eeeeee;
+    background: rgba(0,0,0,0.6);
+    border-radius: 25px;
+    border: 1px solid #888888;
+    margin: 25px 15px 25px;;
+}
+
+.experience{
+    
+}
+
+.experience-full{
+    
+}
+
+.skills{
+
+}
+
+.skills-full{
+    
+}
+
+.projects{
+    
+}
+
+.projects-full{
+    
+}
+
+.footer-buckets{
+    text-align: center;
+    font-size: 1.7em;
+    color: #dddddd;
+    text-align: center;
+    background: #333333;
+}
+
+.blurbs{
+    font-size: .7em;
+}
+
+#footer{
+    font-size: .7em;
+    border: 1px solid #777777;
+}
