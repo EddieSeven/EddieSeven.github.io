@@ -1,0 +1,22 @@
+# Don't track following folders:
+node_modules/
+
+# Compiled Source #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+*.so
+
+# Packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
